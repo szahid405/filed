@@ -7,8 +7,6 @@ audioFileTypes = ["1", "2", "3"]
 @app.route('/')
 @app.route('/index')
 def index():
-	db.drop_all()
-	db.create_all()
 	
 	return jsonify("App is up and running")
 
